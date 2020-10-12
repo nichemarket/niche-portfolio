@@ -1,13 +1,11 @@
 import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 
-import Burger from './components/nav/Burger';
-import Menu from './components/nav/Menu';
+import '#root/assets/styles/index.css'
+import Burger from '#components/nav/Burger';
+import Menu from '#components/nav/Menu';
 
 const Header1 = styled.h1`
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
-    font-family: 'Poppins', sans-serif;
-    color: ${props =>  props.theme.white};
     font-size: 8rem;
     padding: 0;
     margin: 0;
@@ -46,8 +44,6 @@ const Header1 = styled.h1`
 `
 
 const Header2 = styled.span`
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
-    font-family: 'Poppins', sans-serif;
     color: ${props =>  props.theme.primary};
     font-size: 8rem;
     padding: 0;
@@ -82,8 +78,6 @@ const Header2 = styled.span`
 `
 
 const TitleWrapper = styled.div`
-   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
-    font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -92,28 +86,12 @@ const TitleWrapper = styled.div`
     align-items: center;
 `
 
-const Main = createGlobalStyle`
-   * {
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
-    font-family: 'Poppins', sans-serif;
-    color: ${props =>  props.theme.white};
-   }
-
-   body {
-       background: ${props =>  props.theme.black};
-       margin: 0;
-       padding: 0;
-       overflow: hidden;
-   }
-`
-
 export default function App() {
   const [open, setOpen] = React.useState(false);
   const node = React.useRef();
   useOnClickOutside(node, () => setOpen(false));
   return (
     <>
-      <Main />
       <TitleWrapper>
          <Header1>modernize</Header1>
          <Header1>your business<Header2>.</Header2></Header1>

@@ -21,7 +21,6 @@ const StyledMenu = styled.nav`
     }
 
   a {
-    font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     padding: 2rem 0;
     font-weight: bold;
