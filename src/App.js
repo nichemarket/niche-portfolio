@@ -2,10 +2,9 @@ import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 
 import BtnPrimary from '#root/elements/BtnPrimary'
+import "#root/assets/styles/index.css"
 
 const Header1 = styled.h1`
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
-    font-family: 'Poppins', sans-serif;
     color: ${props =>  props.theme.white};
     font-size: 8rem;
     padding: 0;
@@ -45,8 +44,6 @@ const Header1 = styled.h1`
 `
 
 const Header2 = styled.span`
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
-    font-family: 'Poppins', sans-serif;
     color: ${props =>  props.theme.primary};
     font-size: 8rem;
     padding: 0;
@@ -90,11 +87,6 @@ const TitleWrapper = styled.div`
 `
 
 const Main = createGlobalStyle`
-   * {
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
-    font-family: 'Poppins', sans-serif;
-   }
-
    body {
        background: ${props =>  props.theme.black};
        margin: 0;
