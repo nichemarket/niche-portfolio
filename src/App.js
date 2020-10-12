@@ -1,6 +1,8 @@
 import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 
+import BtnPrimary from '#root/elements/BtnPrimary'
+
 const Header1 = styled.h1`
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
     font-family: 'Poppins', sans-serif;
@@ -107,6 +109,9 @@ export default function App() {
             <TitleWrapper>
                 <Header1>portfolio</Header1>
                 <Header1>coming soon<Header2>.</Header2></Header1>
+                <br/>
+                <br/>
+                <BtnPrimary href="https://github.com/nichemarket/niche-portfolio/tree/main">See My Progress on Github</BtnPrimary>
             </TitleWrapper>
         </>
     )
