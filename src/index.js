@@ -1,5 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import App from './App.js'
 
 var mountNode = document.getElementById("app");
-ReactDOM.render(<h1>Niche!</h1>, mountNode);
+ReactDOM.render(<App />, mountNode);
