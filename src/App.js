@@ -50,8 +50,8 @@ export default function App() {
         <>
             <Main />
             <TitleWrapper>
-                <Header1>modernize</Header1>
-                <Header1>your business<Header2>.</Header2></Header1>
+                <Header1>portfolio</Header1>
+                <Header1>coming soon<Header2>.</Header2></Header1>
             </TitleWrapper>
         </>
     )
