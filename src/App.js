@@ -103,7 +103,7 @@ export default function App() {
                 <Header1>coming soon<Header2>.</Header2></Header1>
                 <br/>
                 <br/>
-                <BtnPrimary href="https://github.com/nichemarket/niche-portfolio/tree/main">See My Progress on Github</BtnPrimary>
+                <BtnPrimary><a href="https://github.com/nichemarket/niche-portfolio/tree/main">See My Progress on Github</a></BtnPrimary>
             </TitleWrapper>
         </>
     )
